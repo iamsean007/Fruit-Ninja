@@ -1,0 +1,95 @@
+<!--
+* Fruit Ninja App
+* Credentials: 
+* Benjamin Atbi (100239270)
+* Shivam Mahendru(100273816)
+-->
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title> Fruit Ninja App </title>
+    <meta charset="utf-8" />
+    
+    <!--    StyleSheets -->
+    <link rel="stylesheet" type="text/css" href="main.css" >
+
+    <!--    Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<!--  -->
+<body>
+   <h1> Fruit Ninja App  </h1>
+   <div class="FruitNinjaGame">
+
+      <!-- Game Canvas view -->
+      <div class="GamePlay" >
+         <div class="controls">
+            
+            <!-- Button for new game Start -->
+            <span class='start-btn' id="newGameButton" > New Game </span>
+            <!-- Button to Cancel running Game -->
+            <span class='cancel-btn' id="cancelGameButton" > Cancel </span>
+             
+            <!-- Score display -->
+            <h3 id="Score"> Score : </h3>
+            <!-- Time display -->
+            <div id="timeholder"><h3 id="Time"> Time : </h3></div>
+            
+            <!-- js Canvas -->
+            <canvas id="myCanvas" width=800 height=500 >
+           	  If you are seeing this, you need to upgrade your browser!
+           	</canvas>
+            
+<!--            <script src="backend.js"></script>-->
+<!--            <script src="FN_JS.js"></script>-->
+            <!--JS file-->
+            <script src="Model.js"></script>
+            <script src="Controller.js"></script>
+            <script src="View.js"></script>
+             
+         </div>
+         <div class="view">
+         </div>
+      </div>
+      <!-- Game ScoreSheet -->
+      <div class="ScoreSheet" >
+         <!-- -->
+      </div>
+
+      <!-- Game rules/Instructions -->
+      <div class="Instructions" >
+         <h2>Rules:</h2>
+         <p>
+           Fruit Ninga is a game of showing your ninja cutting skills.
+         </p>
+         <ul>
+           <li>
+             To cut a Fruit, click on it and you will score points.
+           </li>
+           <li>
+             If you cut a bomb, you will lose points.
+           </li>
+           <li>
+             Try to cut as many fruits as possible with the limited time.
+           </li>
+         </ul>
+         <p>It's just that simple.</p>
+
+      </div>
+
+      <!-- Projects Credentials -->
+      <div class="Credentials" >
+         <h2>Credits:</h2>
+         <ul>
+         	<li>Original code:  Shivam Mahendru & Benjamin Atbi</li>
+         </ul>
+
+      </div>
+
+   </div>
+
+
+</body>
+
+</html>

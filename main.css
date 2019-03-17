@@ -1,0 +1,102 @@
+body{
+   background-image: url("images/body_background/body_bg.jpg");
+}
+.controls {
+	margin: auto;
+	width: 800px;
+}
+
+/* myCanvas styles */
+#myCanvas {
+    border:1px solid #000000;
+    background: url('images/body_background/background.jpg');
+    background-size: 800px 500px;
+    cursor: url(images/my-cursor.png), auto;
+}
+
+/** gamePlay margins, paddings
+*/
+.GamePlay{
+   border:1px solid #000000;
+   padding: 20px;
+   background-image: url("images/body_background/app_bg.png");
+   background-size:cover;
+   background-repeat: no-repeat;
+}
+
+/** For heading: Keep it centered,
+*/
+h1{
+   text-align: center;
+}
+
+/** for Subheading: - centered,
+*/
+h2{
+   text-align: center;
+}
+
+
+
+/*TIMER*/
+#Time{
+   float:left;
+}
+#timeholder {
+	float:right;
+	width: 90px;
+}
+
+
+table, th, tr{
+   border: 1px solid #000000;
+}
+
+/*SCORE*/
+#Score{
+   float:left;
+}
+#ScoreTable{
+   border : 5px solid #000000;
+   margin-left: 500px;
+   margin-top: 30px;
+}
+
+
+/*BUTTONS*/
+#newGameButton, #cancelGameButton{
+    margin: 0px 350px;
+    width: 100px;
+    
+    float: left;
+}
+.start-btn{
+    background-color: teal;
+    text-shadow: -1px -1px blue, 1px 1px green;
+    color: white;
+}
+.cancel-btn{
+    background-color: orangered;
+    text-shadow: -1px -1px red, 1px 1px orange;
+    color: white;
+}
+.start-btn, .cancel-btn{
+    text-align: center;
+	display: inline-block;
+	margin:5px;
+    font-weight: bold;
+    padding: 10px 10px 10px 10px ;
+    
+    -webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-o-border-radius: 7px;
+	border-radius: 7px;
+    box-shadow: 0 .2em gray; 
+    cursor: pointer;
+
+}
+.video-game-button:active, .start-btn:active {
+	box-shadow: none;
+	position: relative;
+	top: .2em;
+}
