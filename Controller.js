@@ -1,7 +1,7 @@
 //                  CONTROLLER
 
 
-//c
+
 //add object to render array, sorted by priority
 function addObject(object) {
     if(game_obj_Array.length === 0){
@@ -16,15 +16,17 @@ function addObject(object) {
     }
 }
 
-//c
+
 // remove object at specified index from the render array
 function removeObject(index){
     game_obj_Array.splice(index, 1);
 }
 
 
+
+
 /*******************
-* Physics //c
+* Physics 
 ********************/
 var garbage = [];
 //do one physics iteration, and delete out of bounds objects
@@ -126,7 +128,7 @@ function oppVel(obj){
     obj.velocityX= -obj.velocityX;
 }
 
-//controller
+
 /**
 * randFruitType(array)
 *
@@ -155,9 +157,11 @@ function randFruitType(fruitArr){
 
 /** function that checks all the elem in array to check whether they got clicked or not and change the score likewise.
 
-//controller
+
 */
 function clickCheck(event){
+    
+   
     
     window.scroll({
       top: 0,
@@ -192,8 +196,7 @@ function RectCircleColliding(circle,rect){
 //    alert('T: ' + dx*dx+dy*dy<=(circle.r*circle.r) );
     return (dx*dx+dy*dy<=(circle.r*circle.r));
 }
-        
-//controller
+ 
 /** function that check passed values on all elements in array1
  */
 function arrayCheck(x_value, y_value, elem_arr){
@@ -237,7 +240,9 @@ function arrayCheck(x_value, y_value, elem_arr){
         if(RectCircleColliding(circle, rect)){
 //            alert('touched!');
             elem.is_touched = true;
-
+            
+            
+            
             if (elem.type===fruit_types[0] || elem.type===fruit_types[1] || elem.type === fruit_types[2] ||
                 elem.type===fruit_types[3] || elem.type===fruit_types[4] ){
                 //Increment the score
@@ -245,6 +250,8 @@ function arrayCheck(x_value, y_value, elem_arr){
                 document.getElementById("Score").innerHTML ="Score: " + userScore;
                 removeObject(i);
                 addObject(explosion("fruit", cen_x, cen_y));
+                //play the sound
+                $.playSound('audio/Sword-swipe.wav');
                 break;
             }
             else if(elem.type==="bomb"){//decrement the score and change the image
@@ -252,10 +259,12 @@ function arrayCheck(x_value, y_value, elem_arr){
                 document.getElementById("Score").innerHTML ="Score: " + userScore;
                 removeObject(i);
                 addObject(explosion("bomb", cen_x, cen_y));
+                //play the sound
+                $.playSound('audio/menu-bomb.wav');
                 break;
             }
         }
-        
+//OLD WAY OF CHECKING....        
 //        if(len<radii) {
 //            elem.is_touched = true;
 //
@@ -285,3 +294,5 @@ function length(x1, y1, x2, y2){
     var b = (y2-y1);
     return( Math.sqrt( Math.pow(a,2) + Math.pow(b,2) ) );
 }
+
+

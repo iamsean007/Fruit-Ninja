@@ -75,6 +75,10 @@ function endGame(){
     addObject(obj_factory("gameover", 200, canvasBounds.width / 2 ,canvasBounds.height / 2,
                             0, 0, 0, 0)); 
     
+    $.stopSound();
+    //play the sound
+    $.playSound('audio/Game-over.wav');
+    
     doFrame(); //do one frame. 
     
 }
@@ -88,6 +92,8 @@ function startNewGame(){
     initialize(); 
     
     
+    //play the sound
+    $.playSound('audio/Game-start.wav');
     
     //***** animation code 
     animation = setInterval(gameAnimation, FRAMERATE); 
@@ -105,7 +111,7 @@ function initialize() {
     stopLoops(); //to reset back the score and time. to 0 
     
     //set timer to 60 Seconds
-    timeInSec = 60;
+    timeInSec = 15;
     document.getElementById("Time").innerHTML = "Time: " + timeInSec;
     
     //set score to zero
@@ -138,7 +144,13 @@ function myTimer() {
         $('#newGameButton').show();
         doFrame();
     }
+    if(timeInSec == 10){
+        //play the sound
+        $.playSound('audio/10Seconds.mp3');
+        
+    }
     if(timeInSec<10 && timeInSec>=0){
+        
         document.getElementById("Time").innerHTML ="Time: " + "0"+timeInSec;
     }
 
