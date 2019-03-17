@@ -10,25 +10,28 @@ Fruit Ninja is a game of cutting fruits like a <strong>NINJA</strong>.
 
 
 <h3>Rules/ Instructions: </h3>
--	Click on the New Game button to start a new game.
--	During game, fruits and bombs will pop up from either side.
--	To Score point you have to cut a fruit.
--	To cut a fruit, user must click on the fruit.
--	If you miss a Fruit and it goes out of game area, you lose nothing.
--	The order and number of fruits being popped up varies as the time passes.
--	The game ends when the time ends.
-
+<ul>
+<li>	Click on the New Game button to start a new game. </li>
+<li>	During game, fruits and bombs will pop up from either side. </li>
+<li>	To Score point you have to cut a fruit. </li>
+<li>	To cut a fruit, user must click on the fruit. </li>
+<li>	If you miss a Fruit and it goes out of game area, you lose nothing. </li>
+<li>	The order and number of fruits being popped up varies as the time passes. </li>
+<li>	The game ends when the time ends. </li>
+</ul>
 
 <h3>Scoring Criteria: </h3>
-		
--	By cutting a fruit, user Scores points (+10).
--	By cutting Bombs, user Loses points (-10).
-
+<ul>
+	<li>	By cutting a fruit, user Scores points (+10). </li>
+	<li>	By cutting Bombs, user Loses points (-10).</li>
+</ul>
 
 <h4>Browser Specific Instructions: </h4>
-<strong>Very IMP: For a smooth Gameplay, </strong>
--	Make the browser fullScreen(if you haven’t done it).
--	If you scroll the window or resize it during the Game Animation, clicking on the canvas will scroll it back to zero.
+<strong>Very IMP: For a smooth Gameplay, </strong> 
+<ul>
+	<li>	Make the browser fullScreen(if you haven’t done it). </li>
+	<li>	If you scroll the window or resize it during the Game Animation, clicking on the canvas will scroll it back to zero. </li>
 <i>It works good with Chrome, Safari or Firefox, but haven't been tested to other browsers. </i>
+</ul>
 
 
