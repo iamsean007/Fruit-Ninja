@@ -111,7 +111,7 @@ function initialize() {
     stopLoops(); //to reset back the score and time. to 0 
     
     //set timer to 60 Seconds
-    timeInSec = 15;
+    timeInSec = 60;
     document.getElementById("Time").innerHTML = "Time: " + timeInSec;
     
     //set score to zero
