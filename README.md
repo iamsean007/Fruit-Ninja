@@ -1,5 +1,6 @@
 # Fruit-Ninja
-A lite desktop version of the fruit ninja game. (HTML/CSS &amp; JS)
+A lite desktop version of the fruit ninja game. (HTML/CSS &amp; JS) 
+LIVE Project : https://shivammahendru.com/fruit-ninja/
 
 <h3>Introduction: </h3> 
 Fruit Ninja is a game of cutting fruits like a <strong>NINJA</strong>.
