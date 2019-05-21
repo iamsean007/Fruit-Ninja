@@ -171,7 +171,7 @@ function clickCheck(event){
     
     //getting the x and y point of user click
     var px = event.x - canvasBounds.left;
-    var py = event.y - canvasBounds.top + 35;
+    var py = event.y - canvasBounds.top + 105;
     
     
 
@@ -211,29 +211,30 @@ function arrayCheck(x_value, y_value, elem_arr){
         var radii = elem.radius;
         var len = length(cen_x, cen_y, x_value, y_value);
         
-        
+//        //tracking~~
 //        alert( "X, Y, R, Len -> " + cen_x + ", " + cen_y + ", " + radii + ", " + len);
         
         
         
         var circle={x:x_value,y:y_value,r:20};
-//        
+//        //tracking~~
 //        ctx.beginPath();
 //        ctx.arc(circle.x, circle.y, 20, 0, 2 * Math.PI);
 //        ctx.stroke();
-//
 
 
+//        //tracking~~
 //        alert("cX, cY = " + x_value + ", " + y_value);
         
         
         var rect={x:cen_x-radii,y:cen_y-radii,w:radii*2,h:radii*2};
         
+//        //tracking~~
 //        ctx.beginPath();
 //        ctx.rect(rect.x, rect.y, rect.w, rect.h);
 //        ctx.stroke();
-//        
-
+        
+//        //tracking~~
 //        clearInterval(animation);
         
         

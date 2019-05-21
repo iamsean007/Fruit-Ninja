@@ -12,6 +12,14 @@ body{
     
 }
 
+.warning{
+    color: red;
+    background-color: cornsilk;
+    width: 100vw;
+    text-align: center;
+    font-size: 1.2em;
+}
+
 .FruitNinjaGame{
     max-width: 1200px;
 }
