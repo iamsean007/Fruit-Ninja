@@ -1,20 +1,21 @@
 <!--
 * Fruit Ninja App
 * Credentials: 
-* Shivam Mahendru
-* Benjamin Atbi 
+*   Shivam Mahendru
+*   Benjamin Atbi 
  
 -->
 <!DOCTYPE HTML>
 <html lang="en">
 
 <head>
-    <title> Fruit Ninja App </title>
     <meta charset="utf-8" />
-    
+    <title> Fruit Ninja App</title>
+
     <!--    StyleSheets -->
     <link rel="stylesheet" type="text/css" href="main.css" >
-
+<!--    Google font -font-family: 'Stylish', sans-serif;-->
+    <link href="https://fonts.googleapis.com/css?family=Stylish&display=swap" rel="stylesheet">
     <!--    Jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <!--    jQuery playSound -- This plugin defines $.playSound function.-->
@@ -22,75 +23,89 @@
 
 </head>
 <!--  -->
-<body>
-   <h1> Fruit Ninja App  </h1>
-   <div class="FruitNinjaGame">
+<body itemscope itemtype="https://schema.org/VideoGame">
+    
+    <header id="mainHeader" role="banner">
+       <h1 class="title"> 
+           <span class="firstWord">Fruit</span> 
+           <span class="secondWord">Ninja</span>  
+           <span itemprop="applicationCategory" >game</span> 
+        </h1>
+    </header>
+    
+   <article class="FruitNinjaGame" >
 
       <!-- Game Canvas view -->
-      <div class="GamePlay" >
-         <div class="controls">
-            
-            <!-- Button for new game Start -->
-            <span class='start-btn' id="newGameButton" > New Game </span>
-            <!-- Button to Cancel running Game -->
-            <span class='cancel-btn' id="cancelGameButton" > Cancel </span>
-             
-            <!-- Score display -->
-            <h3 id="Score"> Score : </h3>
-            <!-- Time display -->
-            <div id="timeholder"><h3 id="Time"> Time : </h3></div>
-            
-            <!-- js Canvas -->
-            <canvas id="myCanvas" width=800 height=500 >
-           	  If you are seeing this, you need to upgrade your browser!
-           	</canvas>
-            
-            <!--JS file-->
-            <script src="Model.js"></script>
-            <script src="Controller.js"></script>
-            <script src="View.js"></script>
-             
-         </div>
-         <div class="view">
-         </div>
-      </div>
-      <!-- Game ScoreSheet -->
-      <div class="ScoreSheet" >
-         <!-- -->
-      </div>
+         <main role="main" >
+            <article role="article">
+                <section class="startAndCancelButtons"> 
+                    <!-- Button for new game Start -->
+                    <span class='start-btn' id="newGameButton" > New Game </span>
+                    <!-- Button to Cancel running Game -->
+                    <span class='cancel-btn' id="cancelGameButton" > Cancel </span>
+                </section>
+                
+                <div class="GameView">
+                    <section class="scoreAndTitle">
+                        <!-- Score display -->
+                        <p id="Score"> Score : </p>
+                        <!-- Time display -->
+                        <p id="Time"> Time : </p>
+                    </section>
 
-      <!-- Game rules/Instructions -->
-      <div class="Instructions" >
-         <h2>Rules:</h2>
-         <p>
-           Fruit Ninja is a game of showing your ninja cutting skills.
-         </p>
-         <ul>
-           <li>
-             To cut a Fruit, click on it and you will score points.
-           </li>
-           <li>
-             If you cut a bomb, you will lose points.
-           </li>
-           <li>
-             Try to cut as many fruits as possible with the limited time.
-           </li>
-         </ul>
-         <p>It's just that simple.</p>
+                    <section>
+                        <figure class="canvas">
+                            <!-- js Canvas -->
+                            <canvas id="myCanvas" width=800 height=500 >
+                              If you are seeing this, you need to upgrade your browser!
+                            </canvas>
+                        </figure>
+                    </section> 
+                </div>
+                <!--JS file-->
+                <script src="Model.js"></script>
+                <script src="Controller.js"></script>
+                <script src="View.js"></script>
+            </article>
+       
+          <!-- Game rules/Instructions -->
+          <article class="Instructions" role="article" >
+             <h2>Rules:</h2>
+             <section>
+                 <p class="description" itemprop="about">
+                   Fruit Ninja is a game of showing your ninja cutting skills.
+                 </p>
+                 <ul class="mainRules">
+                   <li>
+                     To cut a Fruit, click on it and <b>you will score points</b>.
+                   </li>
+                   <li>
+                     If you cut a bomb, <b>you will lose points</b>.
+                   </li>
+                   <li>
+                     Try to cut as many fruits as possible with the limited time.
+                   </li>
+                 </ul>
+                 <p>It's just that simple.</p>
+            </section>
 
-      </div>
+          </article>
+    
+       </main><!-- main -->
 
-      <!-- Projects Credentials -->
-      <div class="Credentials" >
-         <h2>Credits:</h2>
-         <ul>
-         	<li>Original code:  Shivam Mahendru & Benjamin Atbi</li>
-         </ul>
-
-      </div>
-
-   </div>
-
+   </article><!--FruitNinjaGame -->
+<!-- Projects Credentials -->
+  <footer class="Credentials" role="contentinfo">
+     <h2>Credits:</h2>
+     <ul>
+        <li style="list-style-type: none;">Original code:  
+            <cite>
+                <span class="author" itemprop="author" > Shivam Mahendru</span> &amp; 
+                <span class="contributor" itemprop="contributor">Benjamin Atbi</span>
+            </cite>
+        </li>
+     </ul>
+  </footer>
 
 </body>
 

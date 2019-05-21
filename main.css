@@ -1,10 +1,46 @@
+
+*{
+    font-family: 'Stylish', sans-serif;
+}
 body{
    background-image: url("images/body_background/body_bg.jpg");
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:0px;
+    
 }
-.controls {
-	margin: auto;
-	width: 800px;
+
+.FruitNinjaGame{
+    max-width: 1200px;
 }
+main {
+	display: flex;
+    
+    flex-direction: column;
+    border:1px solid #000000;
+    padding-top: 10px;
+    background-image: url("images/body_background/app_bg.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+main section{
+    text-align: center;
+}
+
+.title{
+    color: green;
+
+}
+.firstWord{
+    color: mediumpurple;
+    
+}
+.secondWord{
+    color: red;
+}
+
 
 /* myCanvas styles */
 #myCanvas {
@@ -14,16 +50,12 @@ body{
     cursor: url(images/my-cursor.png), auto;
 }
 
-/** gamePlay margins, paddings
-*/
-.GamePlay{
-   border:1px solid #000000;
-   padding: 20px;
-   background-image: url("images/body_background/app_bg.png");
-   background-size:cover;
-   background-repeat: no-repeat;
+.GameView{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }
-
 /** For heading: Keep it centered,
 */
 h1{
@@ -36,12 +68,22 @@ h2{
    text-align: center;
 }
 
-
-
-/*TIMER*/
-#Time{
-   float:left;
+section.scoreAndTitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 50px;
 }
+
+/*Time and Score*/
+#Score, 
+#Time{
+    color: azure;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    font-weight:  bold;
+}
+
 #timeholder {
 	float:right;
 	width: 90px;
@@ -52,10 +94,6 @@ table, th, tr{
    border: 1px solid #000000;
 }
 
-/*SCORE*/
-#Score{
-   float:left;
-}
 #ScoreTable{
    border : 5px solid #000000;
    margin-left: 500px;
@@ -68,7 +106,6 @@ table, th, tr{
     margin: 0px 350px;
     width: 100px;
     
-    float: left;
 }
 .start-btn{
     background-color: teal;
@@ -99,4 +136,33 @@ table, th, tr{
 	box-shadow: none;
 	position: relative;
 	top: .2em;
+}
+
+
+.Instructions{
+    background-color: #90EEAF;
+    padding: 20px;
+}
+.Instructions section{
+    text-align: left;
+}
+
+/*Figure*/
+figure{
+    margin-top:0px;
+}
+
+header{
+    width: 100vw;
+    background-color: azure
+}
+/*footer*/
+footer{
+    background-color: darkslategrey;
+    color: beige;
+    width: 100vw;
+    padding: 20px;
+}
+.Credentials{
+    padding-left: 30px;
 }
